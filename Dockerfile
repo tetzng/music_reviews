@@ -29,4 +29,4 @@ EXPOSE 3000
 
 # 環境変数毎のエンドポイント
 ARG RAILS_ENV
-ENTRYPOINT ["/bin/sh", "-c","/app/script/entrypoint_${RAILS_ENV}.sh" ]
+ENTRYPOINT ["/bin/sh", "-c","/app/app/script/entrypoint_${RAILS_ENV}.sh" ]
